@@ -12,7 +12,6 @@ class PizzaToppingsTableSeeder extends Seeder
      */
     public function run()
     {
-        PizzaTopping::create(['topping'=>'mushrooms']);
         PizzaTopping::create(['topping'=>'ground beef']);
         PizzaTopping::create(['topping'=>'mushrooms']);
         PizzaTopping::create(['topping'=>'onions']);
