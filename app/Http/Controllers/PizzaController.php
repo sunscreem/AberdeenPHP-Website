@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\PizzaTopping;
 
 class PizzaController extends Controller
 {
@@ -11,11 +12,38 @@ class PizzaController extends Controller
         return view('pages.pizza');
     }
 
-    public function search()
+    public function search(Request $request)
     {
         $results = ['test1','test2','test3'];
-
+              
         return view('pages.pizza')->with(compact('results'));
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $results = PizzaTopping::where('topping', 'like', '%' . $request->input('q') . '%')->pluck('topping');
