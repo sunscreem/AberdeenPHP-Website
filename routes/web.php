@@ -39,3 +39,7 @@ Route::get('/events/php', ['as'=>'events.php', 'uses'=>'EventsPagesController@ev
 
 Route::get('/contact', ['as'=>'contact', 'uses'=>'ContactFormController@index']);
 Route::post('/contact', ['as'=>'contactform', 'uses'=>'ContactFormController@store']);
+
+
+Route::get('/pizza', ['as' => 'pizza', 'uses' => 'PizzaController@index']);
+Route::get('/pizza-search', ['as' => 'pizza-search', 'uses' => 'PizzaController@search']);

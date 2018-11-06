@@ -61,6 +61,9 @@
                         <a href="{{ route('homepage') }}">Home</a>
                     </li>
                     <li>
+                        <a href="{{ route('pizza') }}">Pizza</a>
+                    </li>
+                    <li>
                         <a href="{{ route('about') }}">About Us</a>
                     </li>
                     <li>
