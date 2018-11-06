@@ -14,7 +14,10 @@ class PizzaController extends Controller
 
     public function search(Request $request)
     {
-        $results = ['test1','test2','test3'];
+        // $results = ['test1','test2','test3'];
+
+        $results = PizzaTopping::search($request->input('q'))->get()->pluck('topping');
+
       
         return view('pages.pizza')->with(compact('results'));
     }

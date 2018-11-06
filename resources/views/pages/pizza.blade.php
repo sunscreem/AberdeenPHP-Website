@@ -10,7 +10,7 @@
             <form action="{{ route('pizza-search') }}" method="get" class="form-inline">
                 <p>Search for toppings: 
                    <input class="form-control" name="q">
-                   <button type="submit">Search</button>
+                   <button type="submit" class="searchbutton">Search</button>
                 </p>
             </form>
             <hr>
