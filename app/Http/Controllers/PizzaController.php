@@ -9,7 +9,7 @@ class PizzaController extends Controller
 {
     public function index()
     {
-        dd('x');
+        // dd('x');
         return view('pages.pizza');
     }
 
